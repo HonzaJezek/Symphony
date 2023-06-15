@@ -17,4 +17,8 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'homepage_default' => [[], ['_controller' => 'App\\Controller\\HomepageController::default'], [], [['text', '/']], [], [], []],
+    'jezek_default' => [[], ['_controller' => 'App\\Controller\\JezekController::default'], [], [['text', '/default']], [], [], []],
+    'jezek_add' => [[], ['_controller' => 'App\\Controller\\JezekController::add'], [], [['text', '/add']], [], [], []],
+    'jezek_edit' => [[], ['_controller' => 'App\\Controller\\JezekController::edit'], [], [['text', '/edit']], [], [], []],
+    'jezek_delete' => [[], ['_controller' => 'App\\Controller\\JezekController::delete'], [], [['text', '/delete']], [], [], []],
 ];

@@ -147,6 +147,7 @@ class __TwigTemplate_7b7c59570aa50743b4ed504a472c28a2 extends Template
 {% block stylesheets %}{% endblock %}
 {% block javascripts %}{% endblock %}
 
+
 ", "Homepage/default.html.twig", "/var/www/html/templates/Homepage/default.html.twig");
     }
 }
