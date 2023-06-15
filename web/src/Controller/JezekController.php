@@ -4,6 +4,7 @@ namespace App\Controller;
 
 
 use App\Entity\Jezek;
+use App\Form\JezekType;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Asset\UrlPackage;
 use Symfony\Component\Form\FormBuilder;
@@ -42,7 +43,7 @@ class JezekController extends BaseController
 
 
 
-        
+
 
         // preda data do sablony
         return $this->render("Jezek/default.html.twig", [ "TITLE" => " Default " , "form" => $form->createView()]);
@@ -83,7 +84,10 @@ class JezekController extends BaseController
         return $this->render("Jezek/delete.html.twig" , [ "TITLE" => " Delete " ]);
     }
 
-
+    public function __toString()
+    {
+        return $this->entreprise_nom;
+    }
 
 
 

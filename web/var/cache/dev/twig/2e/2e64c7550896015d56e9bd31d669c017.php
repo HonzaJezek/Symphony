@@ -58,6 +58,14 @@ class __TwigTemplate_40aec1b0c21289bcdbe9152fec2ee23e extends Template
         // line 7
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("jezek_delete");
         echo "\">Delete</a>; 
+<br><br>
+
+";
+        // line 10
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 10, $this->source); })()), 'form');
+        echo "
+
+
 ";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -79,7 +87,7 @@ class __TwigTemplate_40aec1b0c21289bcdbe9152fec2ee23e extends Template
 
     public function getDebugInfo()
     {
-        return array (  59 => 7,  54 => 5,  49 => 3,  43 => 1,);
+        return array (  65 => 10,  59 => 7,  54 => 5,  49 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -91,6 +99,11 @@ class __TwigTemplate_40aec1b0c21289bcdbe9152fec2ee23e extends Template
 <a href=\"{{ path  ( \"jezek_add\" )  }}\" >Add</a>; 
 <br><br>
 <a href=\"{{ path ( \"jezek_delete\") }}\">Delete</a>; 
+<br><br>
+
+{{ form(form) }}
+
+
 ", "Jezek/default.html.twig", "/var/www/html/templates/Jezek/default.html.twig");
     }
 }
